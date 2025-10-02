@@ -19,4 +19,4 @@ if __name__ == "__main__":
     print(f"Wacko: {wackos_data}")
     print(f"Yacko: {yacko.data}")
 
-    #
+    # Os nodes podem ser uteis porque permitem guardar informacao e permitem manter os dados organizados de forma estruturada e ligada

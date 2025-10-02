@@ -103,7 +103,7 @@ def nth_last_node(linked_list, n):
 
     return nth_last_pointer
 
-def middle_node(linked_list):
+def find_middle(linked_list):
     fast_pointer = linked_list.get_head_node()
     slow_one = linked_list.get_head_node()
 

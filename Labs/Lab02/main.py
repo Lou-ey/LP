@@ -18,15 +18,15 @@ if __name__ == "__main__":
     ll.insert_beginning(70)
     print(ll.stringify_list())
 
-    #ll.remove_first_instance_node(70)
-    #print(f'Before the swap: {ll.stringify_list()}')
-    #ll.remove_all_instances_nodes(70)
-    #ll.swap_nodes(90, 5)
-    #print(f'After the swap: {ll.stringify_list()}')
+    ll.remove_first_instance_node(70)
+    print(f'Before the swap: {ll.stringify_list()}')
+    ll.remove_all_instances_nodes(70)
+    ll.swap_nodes(90, 5)
+    print(f'After the swap: {ll.stringify_list()}')
 
 
     nth_last = nth_last_node(ll, 1)
     print(nth_last.value)
 
-    middle_node = middle_node(ll)
+    middle_node = find_middle(ll)
     print(middle_node.value)
