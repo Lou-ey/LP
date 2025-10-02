@@ -84,6 +84,31 @@ class DoublyLinkedList:
             prev_node.set_next_node(next_node)
         return node_to_remove
 
+    def remove_by_value_reverse(self, value_to_remove):
+        node_to_remove = None
+        current_node = self.tail_node
+
+        while current_node is not None:
+            if current_node.get_value() == value_to_remove:
+                node_to_remove = current_node
+                break
+            current_node = current_node.get_prev_node()
+
+        if node_to_remove is None:
+            return None
+
+        if node_to_remove == self.head:
+            self.remove_head()
+        elif node_to_remove == self.tail_node:
+            self.remove_tail()
+        else:
+            next_node = node_to_remove.get_next_node()
+            prev_node = node_to_remove.get_prev_node()
+
+            next_node.set_prev_node(prev_node)
+            prev_node.set_next_node(next_node)
+        return node_to_remove
+
     def stringify_list(self):
         stringified_list = ""
         current_node = self.head
