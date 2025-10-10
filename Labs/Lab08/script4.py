@@ -28,7 +28,10 @@ queue_runtime = "O(1)" #Checkpoint 3
 print("The runtime of getting the front of the queue is O({0})".format(queue_runtime))
 #Get First Value added to Stack
 #Write Code Here for #Checkpoint 4
-first_value_added_to_stack = my_stack.pop()
+while not my_stack.is_empty():
+    last_value = my_stack.pop()
+    first_value_added_to_stack = last_value
+
 print("\nThe first value pushed onto the stack was {0}".format(first_value_added_to_stack))
 stack_runtime = "O(N)" #Checkpoint 4
 print("The runtime of getting the bottom of the stack is O({0})".format(stack_runtime))

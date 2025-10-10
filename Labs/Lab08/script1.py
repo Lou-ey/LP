@@ -1,3 +1,7 @@
+# Question 1: Consider the double_array() and find_min() functions. Both have big O runtimes of O(n), but what are their space complexities?
+
+# B. double_array() has a space complexity of O(n) and find_min() has a space complexity of O(1).
+
 def count(N):
     count = 0
     while N > 1:
