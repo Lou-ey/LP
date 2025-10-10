@@ -6,4 +6,5 @@ class Queue:
         self.tail = None
 
     def peek(self):
-        return self.head.get_value() if self.head else None
+        return self.head.get_value()
+

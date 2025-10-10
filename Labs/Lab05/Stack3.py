@@ -15,7 +15,7 @@ class Stack:
         if self.size > 0:
             item_to_remove = self.top_item
             self.top_item = item_to_remove
-            return item_to_remove.get_value() if item_to_remove else None
+            return item_to_remove.get_value()
         else:
             print("Stack is empty")
         self.size -= 1
@@ -23,7 +23,7 @@ class Stack:
 
     def peek(self):
         if self.size > 0:
-            return self.top_item.get_value() if self.top_item else None
+            return self.top_item.get_value()
         else:
             print("Stack is empty")
         return None

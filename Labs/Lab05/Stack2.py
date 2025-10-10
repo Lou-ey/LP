@@ -12,7 +12,7 @@ class Stack:
     def pop(self):
         item_to_remove = self.top_item
         self.top_item = item_to_remove
-        return item_to_remove.get_value() if item_to_remove else None
+        return item_to_remove.get_value()
 
     def peek(self):
-        return self.top_item.get_value() if self.top_item else None
+        return self.top_item.get_value()

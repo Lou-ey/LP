@@ -55,27 +55,6 @@ class HashMap:
                     return None
         return None
 
-    def delete_key(self, key):
-        array_index = self.compressor(self.hash(key))
-        possible_return_value = self.array[array_index]
-        if possible_return_value is not None:
-            if possible_return_value[0] == key:
-                self.array[array_index] = None
-                return
-            else:
-                deletion_collisions = 1
-                while possible_return_value[0] != key:
-                    deleting_array_index = self.compressor(self.hash(key, deletion_collisions))
-                    possible_return_value = self.array[deleting_array_index]
-                    if possible_return_value is not None:
-                        if possible_return_value[0] == key:
-                            self.array[deleting_array_index] = None
-                            return
-                        else:
-                            deletion_collisions += 1
-                    return
-        return
-
 hash_map = HashMap(20)
 hash_map.assign("gneiss", "metamorphic")
 hash_map.assign("gabbro", "igneous")
@@ -83,5 +62,4 @@ hash_map.assign("sandstone", "sedimentary")
 print(hash_map.retrieve("gneiss"))
 print(hash_map.retrieve("gabbro"))
 print(hash_map.retrieve("sandstone"))
-hash_map.delete_key("gabbro")
 print(hash_map.retrieve("gabbro"))

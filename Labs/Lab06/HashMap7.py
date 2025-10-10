@@ -30,3 +30,4 @@ class HashMap:
 hash_map = HashMap(20)
 hash_map.assign("gneiss", "metamorphic")
 print(hash_map.retrieve("gneiss"))
+

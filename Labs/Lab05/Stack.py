@@ -5,4 +5,4 @@ class Stack:
         self.top_item = None
 
     def peek(self):
-        return self.top_item.get_value() if self.top_item else None
+        return self.top_item.get_value()
