@@ -5,7 +5,6 @@ def power_set(my_list):
     with_first = [ [my_list[0]] + rest for rest in power_set_without_first ]
     return with_first + power_set_without_first
 
-# very long list to demonstrate recursion limit
 long_list = list(range(20))
 print(power_set(long_list))
 

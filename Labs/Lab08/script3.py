@@ -47,5 +47,5 @@ ll_3.insert_beginning(-92)
 print("The sorted linked list is:\n{0}".format(sort_linked_list(ll_3).stringify_list()))
 
 #Runtime
-runtime = "REPLACE"
+runtime = "N²"
 print("The runtime of sort_linked_list is O({0})\n\n".format(runtime))
